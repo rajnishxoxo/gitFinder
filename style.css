@@ -81,7 +81,35 @@
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 3rem;
     margin: 0 1.5rem;
     margin-left: 265px;
+    display: none;
+}
+
+.img{
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-image{
+    margin-right: 20px;
+
+}
+
+.userName{
+    margin-top: 0;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.userProfileInfo{
+    color:white;
+    font-size: 20px;
 }
