@@ -10,6 +10,11 @@
   background-color: #2a2a72;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
 .intialDisplay{
     display: flex;
     flex-direction: row;
@@ -18,8 +23,9 @@
     width: 900px;
     
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 200px;
 }
+
 
 #searchBar{
     width: 70%;
@@ -30,7 +36,7 @@
     padding: 1rem;
     margin-bottom: 2rem;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 2rem;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,4 +73,15 @@
 #btn:hover{
     color: #fff;
     background-color: #616467;
+}
+
+.resultdisplay{
+    max-width: 800px;
+    background-color: #4c2885;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+    margin-left: 265px;
 }
