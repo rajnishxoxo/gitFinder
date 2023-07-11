@@ -11,6 +11,7 @@ const profilePara = document.querySelector('.userProfileInfo');
 const userFollowers = document.querySelector('.followers');
 const userFollowing = document.querySelector('.following');
 const repoCount = document.querySelector('.repo');
+const profileLink = document.querySelector('.link');
 
 submitButton.addEventListener("click", () => {
   let getResult = async function () {
@@ -33,6 +34,11 @@ submitButton.addEventListener("click", () => {
       userFollowers.innerHTML= `Followers : ${result.followers}`;
       userFollowing.innerHTML =`Following : ${result.following}`;
       repoCount.innerHTML =`Repo : ${result.public_repos}`
+   
+      console.log(result.html_url)
+
+      let profilelinks = result.html_url;
+      profileLink.href = profilelinks;
     } catch (error) {
         console.log(error)
     }
