@@ -2,9 +2,15 @@ const submitButton = document.getElementById("btn");
 
 const inputBar = document.getElementById("searchBar");
 
-const userdisplay = document.querySelector(".resultdisplay");
+const userdisplay = document.querySelector(".div");
 
 const displayUserImage = document.querySelector(".img");
+
+const userName = document.querySelector('.userName');
+const profilePara = document.querySelector('.userProfileInfo');
+const userFollowers = document.querySelector('.followers');
+const userFollowing = document.querySelector('.following');
+const repoCount = document.querySelector('.repo');
 
 submitButton.addEventListener("click", () => {
   let getResult = async function () {
@@ -19,12 +25,18 @@ submitButton.addEventListener("click", () => {
         `https://api.github.com/users/${inputBar.value}`
       );
       result = await result.json();
-      let imageURL = result.avatar_url;
-      displayUserImage.src = imageURL;
-    } catch (error) {}
-
-    // console.log(result)
-    // console.log(result.avatar_url)
+      console.log(result)
+      let imageURl= result.avatar_url;
+      userName.textContent = result.name;
+      profilePara.innerHTML =result.bio;
+      displayUserImage.src = imageURl;
+      userFollowers.innerHTML= `Followers : ${result.followers}`;
+      userFollowing.innerHTML =`Following : ${result.following}`;
+      repoCount.innerHTML =`Repo : ${result.public_repos}`
+    } catch (error) {
+        console.log(error)
+    }
+    
   };
 
   getResult();
