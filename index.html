@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Profile Finder</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="warpper">
-        <div class="container">
-
-            <div class="intialDisplay">
-            <input type="text"  id="searchBar" placeholder="Search a Github User" >
-            <button id="btn">Search</button>
-            </div>
-
+      <div class="container">
+        <div class="intialDisplay">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search A Github User"
+          />
+          <button id="btn">Search</button>
         </div>
+
+        
+            <div class="resultdisplay">
+                <div class="user-image">
+                  <img class="img" src="" alt="" />
+                </div>
+      
+                <div class="userDetail">
+                  <h2 class="userName"></h2>
+      
+                  <p class="userProfileInfo">
+                    
+                  </p>
+
+                  <ul class="moreinfo">
+                    <li class="followers"></li>
+                    <li class="following"></li>
+                    <li class="repo"></li>
+                  </ul>
+
+                  <p class="link" >Profile Link : <a class="redirectLink" href="" target="_blank">Click Here</a></p>
+                  
+                </div>
+              </div>
+        </div>
+       
+      </div>
     </div>
-</body>
+  </body>
+  <script src="index.js"></script>
 </html>

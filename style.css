@@ -10,6 +10,11 @@
   background-color: #2a2a72;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
 .intialDisplay{
     display: flex;
     flex-direction: row;
@@ -18,8 +23,9 @@
     width: 900px;
     
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 200px;
 }
+
 
 #searchBar{
     width: 70%;
@@ -30,7 +36,7 @@
     padding: 1rem;
     margin-bottom: 2rem;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 2rem;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,4 +73,76 @@
 #btn:hover{
     color: #fff;
     background-color: #616467;
+}
+
+.div{
+    display: none;
+}
+
+.resultdisplay{
+    max-width: 900px;
+    background-color: #4c2885;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem;
+    margin: 0 1.5rem;
+    margin-left: 265px;
+ 
+}
+
+.img{
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-image{
+    margin-right: 20px;
+
+}
+
+.userDetail{
+    display: flex;
+    flex-direction: column;
+}
+
+.userName{
+    margin-top: 0;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.userProfileInfo{
+    color:white;
+    font-size: 20px;
+}
+
+.moreinfo{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+font-size: 25px;
+   color: white;
+   margin-top: 20px;
+   margin-left: -40px;
+   
+}
+
+.link{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.redirectLink{
+    color: white;
+    text-decoration: None;
 }
