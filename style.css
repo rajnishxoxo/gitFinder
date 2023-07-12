@@ -79,6 +79,24 @@
     display: none;
 }
 
+.noUserFound{
+    max-width: 900px;
+    display: none;
+    background-color: #4c2885;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin: 0 1.5rem;
+    margin-left: 265px;
+}
+
+.userNameNotfound{
+    margin-top: 0;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
 .resultdisplay{
     max-width: 900px;
     background-color: #4c2885;
@@ -131,10 +149,7 @@
 font-size: 25px;
    color: white;
    margin-top: 20px;
-<<<<<<< HEAD
    margin-left: -40px;
-=======
->>>>>>> fe8aad1d909e883cf29b97f69d3ecc6003dbb2aa
    
 }
 
@@ -142,13 +157,12 @@ font-size: 25px;
     color: white;
     font-size: 20px;
     text-decoration: none;
-<<<<<<< HEAD
     margin-top: 10px;
+    margin-left: -7px;
 }
 
 .redirectLink{
     color: white;
-    text-decoration: None;
-=======
->>>>>>> fe8aad1d909e883cf29b97f69d3ecc6003dbb2aa
+    text-decoration: none;
+    
 }
