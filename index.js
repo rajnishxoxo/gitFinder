@@ -32,6 +32,7 @@ submitButton.addEventListener("click", () => {
   let getResult = async function () {
     if (inputBar.value == "") {
       alert("please enter the UserName");
+      
     } 
 
     try {
