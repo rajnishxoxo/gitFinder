@@ -131,7 +131,10 @@
 font-size: 25px;
    color: white;
    margin-top: 20px;
+<<<<<<< HEAD
    margin-left: -40px;
+=======
+>>>>>>> fe8aad1d909e883cf29b97f69d3ecc6003dbb2aa
    
 }
 
@@ -139,10 +142,13 @@ font-size: 25px;
     color: white;
     font-size: 20px;
     text-decoration: none;
+<<<<<<< HEAD
     margin-top: 10px;
 }
 
 .redirectLink{
     color: white;
     text-decoration: None;
+=======
+>>>>>>> fe8aad1d909e883cf29b97f69d3ecc6003dbb2aa
 }
